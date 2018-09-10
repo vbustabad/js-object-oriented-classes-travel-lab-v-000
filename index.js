@@ -27,6 +27,11 @@ class Route {
     let horizontal_distance = (eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal));
     let vertical_distance = ((this.endingLocation.vertical) - (this.beginningLocation.vertical));
 
-    return ;
+    if peak_hours {
+      return ((horizontal_distance + vertical_distance)/3);
+    }
+    else {
+      return ((horizontal_distance + vertical_distance)/2);
+    }
   }
 }
