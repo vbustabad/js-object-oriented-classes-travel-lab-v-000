@@ -27,10 +27,10 @@ class Route {
     let vertical_distance = ((this.endingLocation.vertical) - (this.beginningLocation.vertical));
 
     if estimatedTime(true) {
-      return ((horizontal_distance + vertical_distance)/3);
+      return ((horizontal_distance + vertical_distance)/2);
     }
     else {
-      return ((horizontal_distance + vertical_distance)/2);
+      return ((horizontal_distance + vertical_distance)/3);
     }
   }
 }
