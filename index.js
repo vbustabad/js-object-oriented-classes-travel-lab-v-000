@@ -21,8 +21,12 @@ class Route {
     return ((eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal)) + ((this.endingLocation.vertical) - (this.beginningLocation.vertical)));
   }
  }
-//
-//   estimatedTime() {
-//     return ;
-//   }
-// }
+
+  estimatedTime() {
+    let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
+    let horizontal_distance = (eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal));
+    let vertical_distance = ((this.endingLocation.vertical) - (this.beginningLocation.vertical));
+
+    return ;
+  }
+}
